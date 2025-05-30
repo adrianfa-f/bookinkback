@@ -15,7 +15,9 @@ const app = express();
 app.use(cors(
     {
     origin:'https://bookink.netlify.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
 }));
 app.use(helmet());
 app.use(morgan('dev'));
