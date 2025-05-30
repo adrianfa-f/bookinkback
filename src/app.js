@@ -14,7 +14,7 @@ const app = express();
 // Middlewares
 app.use(cors(
     {
-    origin:'https://bookink.netlify.app/',
+    origin:'https://bookink.netlify.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 app.use(helmet());
