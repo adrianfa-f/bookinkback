@@ -25,7 +25,7 @@
     "swagger-ui-express": "^5.0.1"
   },
   "scripts": {
-    "seed": "bun run prisma/seed.ts"
+    "seed": "bun run prisma/seed.js"
   },
   "prisma": {
     "seed": "bun run seed"
