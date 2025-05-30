@@ -14,7 +14,10 @@ const app = express();
 // Middlewares
 app.use(cors(
     {
-    origin: 'http://localhost:3000', // URL de tu frontend
+    origin: [
+        'https://bookink.netlify.app/', // Reemplaza con tu URL real
+        'http://localhost:3000' // Para desarrollo local
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 app.use(helmet());
